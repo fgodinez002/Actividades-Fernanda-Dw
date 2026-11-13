@@ -16,7 +16,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
 
-  <link rel="stylesheet" href="styles.css"
+  <link rel="stylesheet" href="styles.css">
 </head><!--HASTA AQUI VA EL HEAD-->
 
 <!--AQUI INICIA EL BODY-->
@@ -34,7 +34,81 @@
     </button>
    </div>
 
+   <!-- Mensaje pagina 1-->
+
+   <div class="page" id="pagina1">
+    <div class="photo-circle">
+      <img class="photo-img" loading="lazy" src="navidad2.jpg
+      " alt="navidad">
+    </div>
+    <p class="msg-text">En esta navidad te deseo que este llena de magia y amor en tu hogar 🎁💛</p>
+    <button id="btn-next-1" class="btn-secondary">
+      <span class="btn-text">Siguiente</span>
+    </button>
+    </div>
+
+<!--Mensaje pagina 2-->
+<div class="page" id="pagina2">
+    <h2 class="gallery-title">En cada navidad ✨</h2>
+    <div class="gallery-grid">
+     <div class="gallery-item gold-border">
+      <img class="gallery-img" loading="lazy" src="navidad3.jpeg" alt="santa">
+     </div>
+     <div class="gallery-item gold-border">
+      <img class="gallery-img" loading="lazy" src="navidad 4.jpeg" alt="luces">
+     </div>
+     <div class="gallery-item gold-border">
+      <img class="gallery-img" loading="lazy" src="navidad 5.jpeg" alt="santa claus y señora claus">
+     </div>
+    </div>
+  
+    <p class="gallery-caption">Cada foto guarda una navidad juntos📸</p>
+   </div>
+
+   <!--BOTON PARA REVELAR UN MENSAJE-->
+
+    <div class="page" id="pagina3">
+    <div class="float-container float">
+     <span class="heart-emoji">🎅</span>
+    </div>
+    <p class="msg-text">¡Descubre tu mensaje secreto!</p>
+    <button id="btn-reveal" class="btn-309ebc">
+      <span class="btn-text">Haz click!</span>
+    </button>
+   </div>
+
+   <!--MENSAJE FINAL-->
 
 
+ <div class="page" id="pagina4">
+    <div id="final-card" class="final-card">
+     <audio id="navidad-audio" src="navidadAudio.mp3"></audio>
+     <div class="photo-circle gold-border final-photo">
+      <img class="photo-img" loading="lazy" src="navidad.jpg" alt="Arbol de Navidad">
+     </div>
+     <h2 class="final-title">Felices Fiestas</h2>
+     <p class="final-msg">Que esta navidad traiga mucha alegria y felicidad a tu hogar!</p>
+     <button id="btn-audio-ebc" class="btn-heart">
+      <span id="ebc-audio-btn-text">💗</span>
+     </button>
+    </div>
+    <div id="confetti-container" class="confetti-container"></div>
+   </div>
+   <!--Navegacion de la tarjeta-->
+
+   <nav class="nav-container" aria-label="Navegación de páginas">
+    <button id="btn-prev" class="btn-nav" aria-label="Anterior">
+      <i data-lucide="chevron-left" class="icon-nav"></i>
+    </button>
+    <div id="dots" class="dots-container"></div>
+    <button id="btn-next" class="btn-nav" aria-label="Siguiente">
+      <i data-lucide="chevron-right" class="icon-nav"></i>
+    </button>
+   </nav>
+  </div>
+
+
+
+<script src="script.js"></script>
 </body>
 </html>
